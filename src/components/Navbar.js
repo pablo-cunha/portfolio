@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../brand.png"
 // FONT AWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
