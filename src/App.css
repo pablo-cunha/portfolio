@@ -5,6 +5,7 @@
   --primary-light-grey: #f4f4f4;
   --primary-orange: #f9ab00;
   --primary-dark: rgb(52, 58, 64);
+  --primary-dark-grey: #a5a3a3ad;
   --primary-red: #ef4035;
   --primary-black: #000000;
   --hover-red: #f33501;
@@ -52,7 +53,7 @@
     height: 4rem;
  }
 
- .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+ .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
     border-top: 0.1875rem solid var(--primary-orange);
  }
 
@@ -74,7 +75,7 @@
   ), url(header-background.jfif) no-repeat;
    background-size: cover;
    background-position: center;
-   height: 90vh;
+   height: 100vh;
    
  }
 
@@ -302,6 +303,10 @@
   color: var(--primary-red);
 }
 
+.popupbox-wrapper {
+  margin-top: 7rem;
+}
+
 /*------ POPUP BOX MEDIA -------*/
 @media(max-width: 768px) {
   .popup-image {
@@ -315,4 +320,41 @@
   .popup-image {
     width: 30%;
   }
+}
+/*------ CONTACTS -------*/
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.link-icon {
+  color:var(--primary-white);
+  text-decoration: none;
+}
+
+.link-icon:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+}
+
+.contacts .box {
+  padding: 2rem;
+  margin-bottom: 1.875rem;
+}
+
+/*------ FOOTER -------*/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 1.2rem;
+}
+
+.footer p {
+  margin-bottom: 0;
 }

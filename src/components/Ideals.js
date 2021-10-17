@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Ideals = () => {
     return (
-        <div className="ideals">
+        <div id="ideals" className="ideals">
             <h1 className="py-5">valores</h1>
                 <div className="container">
                     <div className="row">

@@ -1,12 +1,13 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Particles from 'react-particles-js';
 import About from './components/About';
 import Ideals from './components/Ideals';
 import Portfolio from './components/Portfolio';
+import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
    <About />
    <Ideals />
    <Portfolio />
+   <Contacts />
+   <Footer />
   </>
   );
 }
