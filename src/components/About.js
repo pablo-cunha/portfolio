@@ -16,7 +16,7 @@ const About = () => {
                     Olá, me chamo Pablo e atualmente sou estudante de análise e desenvolvimento de sistemas na instituição FAETERJ. 
                     Como um bom entusiasta, por fora da faculdade estou sempre atrás de conhecimento prático sobre programação. 
                     Tenho conhecimento em desenvolvimento web, utilizando tecnologias como: ReactJS, Angular, Express e outras mais.
-                    No momento estou estudando Vue.js e Design UI/UX.
+                    No momento estou estudando Java.
                     </p>
                 </div>
             </div>

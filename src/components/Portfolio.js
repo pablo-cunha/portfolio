@@ -29,7 +29,7 @@ const Portfolio = () => {
     const popupboxConfigNetflix = {
         titleBar: {
             enable: true,
-            text: "Clone Netflix"
+            text: ""
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -54,7 +54,7 @@ const Portfolio = () => {
         const popupboxConfigToDo = {
             titleBar: {
                 enable: true,
-                text: "To-do List"
+                text: ""
             },
             fadeIn: true,
             fadeInSpeed: 500
@@ -78,8 +78,8 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-            <PopupboxContainer {...popupboxConfigNetflix}/>
             <PopupboxContainer {...popupboxConfigToDo}/>
+            <PopupboxContainer {...popupboxConfigNetflix}/>
     </div>
     )
 }
