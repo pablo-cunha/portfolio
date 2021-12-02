@@ -19,7 +19,9 @@ const Portfolio = () => {
         </a>
         <p>Clone Frontend Netflix desenvolvido em React.</p>
         <p>Clique na imagem e acesse o projeto!</p>
-        <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/reactNetflix") } href="">
+        <b>Github: </b> <a className="hyper-link" 
+        onClick={() => window.open("https://github.com/pablo-cunha/reactNetflix") } 
+        href="">
         https://github.com/pablo-cunha/reactNetflix</a>
         </>
         )
