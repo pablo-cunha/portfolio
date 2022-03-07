@@ -1,5 +1,6 @@
 import React from 'react'
 import toDoList from '../vue-task-manager.JPG'
+import wordleClone from '../clone-wordle.JPG'
 import netflix from '../netflix-clone.JPG'
 // REACT POP UP BOX
 import { PopupboxManager, PopupboxContainer } from "react-popupbox"
@@ -14,14 +15,14 @@ const Portfolio = () => {
     const openPopupboxNetflix = () => {
         const content = (
         <>
-        <a href="https://react-netflix-khaki.vercel.app/">            
+        <a href="https://react-netflix-khaki.vercel.app/" target="_blank" rel="noreferrer">            
         <img className="popup-image" src={netflix} alt="Clone Netflix"/> 
         </a>
         <p>Clone Frontend Netflix desenvolvido em React.</p>
         <p>Clique na imagem e acesse o projeto!</p>
         <b>Github: </b> <a className="hyper-link" 
         onClick={() => window.open("https://github.com/pablo-cunha/reactNetflix") } 
-        href="">
+        href="" target="_blank" rel="noreferrer">
         https://github.com/pablo-cunha/reactNetflix</a>
         </>
         )
@@ -41,12 +42,13 @@ const Portfolio = () => {
         const openPopupboxToDo = () => {
             const content = (
             <>
-            <a href="https://vue-todo-list-rho.vercel.app/">            
+            <a href="https://vue-todo-list-rho.vercel.app/" target="_blank" rel="noreferrer">            
             <img className="popup-image" src={toDoList} alt="Task Manager"/> 
             </a>
             <p>To Do List em VueJS e estilizado com Bootstrap.</p>
             <p>Clique na imagem e acesse o projeto!</p>
-            <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/vueToDoList") } href="">
+            <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/vueToDoList") } 
+            href="" target="_blank" rel="noreferrer">
             https://github.com/pablo-cunha/vueToDoList</a>
             </>
             )
@@ -62,19 +64,52 @@ const Portfolio = () => {
             fadeInSpeed: 500
         }
 
+        // Wordle Clone
+        const openPopupboxWordle = () => {
+            const content = (
+                <>
+                <a href="https://pablo-cunha.github.io/wordle-clone/" target="_blank" rel="noreferrer">            
+                <img className="popup-image" src={wordleClone} alt="Wordle Clone"/> 
+                </a>
+                <p>Clone do jogo Wordle, feito com HTML, CSS e JavaScript.</p>
+                <p>Clique na imagem e acesse o projeto!</p>
+                <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/wordle-clone") } 
+                href="" target="_blank" rel="noreferrer">
+                https://github.com/pablo-cunha/wordle-clone</a>
+                </>
+                )
+                PopupboxManager.open({content})
+        }
+
+        const popupboxConfigWordle = {
+            titleBar: {
+                enable: true,
+                text: ""
+            },
+            fadeIn: true,
+            fadeInSpeed: 500
+        }
+
     return (
         <div id="portfolio" className="portfolio-wrapper">
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">portfolio</h1>
                 <div className="image-box-wrapper row justify-content-center">
+                {/* Netflix Box */}
                     <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
                     <img className="portfolio-image" src={netflix} alt="Clone Netflix desenvolvido em React."/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
-                {/* - */}
+                {/* To-Do List Box */}
                     <div className="portfolio-image-box" onClick={openPopupboxToDo}>
-                    <img className="portfolio-image" src={toDoList} alt="Task Manager feito em VueJS e Bootstrap"/>
+                    <img className="portfolio-image" src={toDoList} alt="Task Manager feito em VueJS e Bootstrap."/>
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
+                    </div>
+                {/* Wordle Clone Box */}
+                    <div className="portfolio-image-box" onClick={openPopupboxWordle}>
+                    <img className="portfolio-image" src={wordleClone} alt="Clone do jogo Wordle, feito com HTML, CSS e JavaScript."/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
@@ -82,6 +117,7 @@ const Portfolio = () => {
             </div>
             <PopupboxContainer {...popupboxConfigToDo}/>
             <PopupboxContainer {...popupboxConfigNetflix}/>
+            <PopupboxContainer {...popupboxConfigWordle}/>
     </div>
     )
 }
