@@ -1,4 +1,6 @@
 import React from 'react'
+// PROJECTS IMGS
+import buscadorCep from '../buscador-cep.JPG'
 import toDoList from '../vue-task-manager.JPG'
 import wordleClone from '../clone-wordle.JPG'
 import netflix from '../netflix-clone.JPG'
@@ -90,6 +92,33 @@ const Portfolio = () => {
             fadeInSpeed: 500
         }
 
+        // Buscador CEP
+        const openPopupboxBuscador = () => {
+            const content = (
+                <>
+                <a href="https://buscador-cep-phi.vercel.app/" target="_blank" rel="noreferrer">            
+                <img className="popup-image" src={buscadorCep} alt="Buscador CEP"/> 
+                </a>
+                <p>Buscador de CEP feito em React e requisições feitas via Ajax.</p>
+                <p>Clique na imagem e acesse o projeto!</p>
+                <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/buscador-cep") } 
+                href="" target="_blank" rel="noreferrer">
+                https://github.com/pablo-cunha/buscador-cep</a>
+                </>
+                )
+                PopupboxManager.open({content})
+        }
+
+        const popupboxConfigBuscador = {
+            titleBar: {
+                enable: true,
+                text: ""
+            },
+            fadeIn: true,
+            fadeInSpeed: 500
+        }
+
+
     return (
         <div id="portfolio" className="portfolio-wrapper">
             <div className="container">
@@ -113,11 +142,18 @@ const Portfolio = () => {
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
-                </div>
+                {/* Buscador de CEP */}
+                    <div className="portfolio-image-box" onClick={openPopupboxBuscador}>
+                    <img className="portfolio-image" src={buscadorCep} alt="Buscador de CEP feito em React e requisições feitas via Ajax."/>
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
+                    </div>
+                </div> 
             </div>
             <PopupboxContainer {...popupboxConfigToDo}/>
             <PopupboxContainer {...popupboxConfigNetflix}/>
             <PopupboxContainer {...popupboxConfigWordle}/>
+            <PopupboxContainer {...popupboxConfigBuscador}/>
     </div>
     )
 }

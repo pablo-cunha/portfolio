@@ -14,7 +14,8 @@ const Contacts = () => {
                         <div className="col-md-4 col-sm-12">
                             <div className="box">
                                 <div>
-                                    <a href="https://github.com/pablo-cunha" className="link-icon">
+                                    <a href="https://github.com/pablo-cunha" 
+                                    className="link-icon" target="_blank" rel="noreferrer">
                                         <FontAwesomeIcon icon={faGithub} size="2x"/>
                                         <h3>GitHub</h3>
                                     </a>
@@ -25,7 +26,8 @@ const Contacts = () => {
                         <div className="col-md-4 col-sm-12">
                             <div className="box">
                             <div>
-                                <a href="https://www.linkedin.com/in/pablo-cunha-a8b572220/" className="link-icon">  
+                                <a href="https://www.linkedin.com/in/pablo-cunha/" 
+                                className="link-icon" target="_blank" rel="noreferrer">  
                                 <FontAwesomeIcon icon={faLinkedin} size="2x"/>
                                 <h3>Linkedin</h3>
                                 </a>
