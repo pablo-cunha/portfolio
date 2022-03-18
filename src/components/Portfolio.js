@@ -1,9 +1,9 @@
 import React from 'react'
 // PROJECTS IMGS
-import buscadorCep from '../buscador-cep.JPG'
-import toDoList from '../vue-task-manager.JPG'
-import wordleClone from '../clone-wordle.JPG'
-import netflix from '../netflix-clone.JPG'
+import buscadorCep from '../images/buscador-cep.JPG'
+import toDoList from '../images/vue-task-manager.JPG'
+import wordleClone from '../images/clone-wordle.JPG'
+import netflix from '../images/netflix-clone.JPG'
 // REACT POP UP BOX
 import { PopupboxManager, PopupboxContainer } from "react-popupbox"
 import "react-popupbox/dist/react-popupbox.css"

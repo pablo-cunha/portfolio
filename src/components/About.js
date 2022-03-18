@@ -1,5 +1,5 @@
 import React from "react";
-import Picture from "../gthub-profile.jfif";
+import Picture from "../images/gthub-profile.jfif";
 
 const About = () => {
   return (
