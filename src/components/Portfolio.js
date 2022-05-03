@@ -4,6 +4,7 @@ import buscadorCep from '../images/buscador-cep.JPG'
 import toDoList from '../images/vue-task-manager.JPG'
 import wordleClone from '../images/clone-wordle.JPG'
 import netflix from '../images/netflix-clone.JPG'
+import bikcraft from '../images/bikcraft.JPG'
 // REACT POP UP BOX
 import { PopupboxManager, PopupboxContainer } from "react-popupbox"
 import "react-popupbox/dist/react-popupbox.css"
@@ -118,6 +119,31 @@ const Portfolio = () => {
             fadeInSpeed: 500
         }
 
+        // Projeto Bikcraft
+        const openPopupboxBikcraft = () => {
+            const content = (
+                <>
+                <a href="https://bikcraft-gold.vercel.app/" target="_blank" rel="noreferrer">            
+                <img className="popup-image" src={bikcraft} alt="Buscador CEP"/> 
+                </a>
+                <p>Projeto site de bicicletas elétricas, feito apenas com HTML, CSS e JavaScript.</p>
+                <p>Clique na imagem e acesse o projeto!</p>
+                <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/bikcraft") } 
+                href="" target="_blank" rel="noreferrer">
+                https://github.com/pablo-cunha/bikcraft</a>
+                </>
+                )
+                PopupboxManager.open({content})
+        }
+
+        const popupboxConfigBikcraft = {
+            titleBar: {
+                enable: true,
+                text: ""
+            },
+            fadeIn: true,
+            fadeInSpeed: 500
+        }
 
     return (
         <div id="portfolio" className="portfolio-wrapper">
@@ -148,12 +174,19 @@ const Portfolio = () => {
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
+                {/* Bikcraft Box */}
+                    <div className="portfolio-image-box" onClick={openPopupboxBikcraft}>
+                    <img className="portfolio-image" src={bikcraft} alt="Projeto site de bicicletas elétricas, feito apenas com HTML, CSS e JavaScript."/>
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
+                    </div>
                 </div> 
             </div>
             <PopupboxContainer {...popupboxConfigToDo}/>
             <PopupboxContainer {...popupboxConfigNetflix}/>
             <PopupboxContainer {...popupboxConfigWordle}/>
             <PopupboxContainer {...popupboxConfigBuscador}/>
+            <PopupboxContainer {...popupboxConfigBikcraft}/>
     </div>
     )
 }
