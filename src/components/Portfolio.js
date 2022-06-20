@@ -1,7 +1,6 @@
 import React from 'react'
 // PROJECTS IMGS
-import buscadorCep from '../images/buscador-cep.JPG'
-import toDoList from '../images/vue-task-manager.JPG'
+import githubSearch from '../images/github-search.JPG'
 import wordleClone from '../images/clone-wordle.JPG'
 import netflix from '../images/netflix-clone.JPG'
 import bikcraft from '../images/bikcraft.JPG'
@@ -41,109 +40,83 @@ const Portfolio = () => {
         fadeInSpeed: 500
     }
 
-        // Projeto Vue
-        const openPopupboxToDo = () => {
-            const content = (
+    // Wordle Clone
+    const openPopupboxWordle = () => {
+        const content = (
             <>
-            <a href="https://vue-todo-list-rho.vercel.app/" target="_blank" rel="noreferrer">            
-            <img className="popup-image" src={toDoList} alt="Task Manager"/> 
+            <a href="https://pablo-cunha.github.io/wordle-clone/" target="_blank" rel="noreferrer">            
+                <img className="popup-image" src={wordleClone} alt="Wordle Clone"/> 
             </a>
-            <p>To Do List em VueJS e estilizado com Bootstrap.</p>
+            <p>Clone do jogo Wordle, feito com HTML, CSS e JavaScript.</p>
             <p>Clique na imagem e acesse o projeto!</p>
-            <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/vueToDoList") } 
+            <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/wordle-clone") } 
             href="" target="_blank" rel="noreferrer">
-            https://github.com/pablo-cunha/vueToDoList</a>
+            https://github.com/pablo-cunha/wordle-clone</a>
             </>
             )
             PopupboxManager.open({content})
-        } 
-    
-        const popupboxConfigToDo = {
-            titleBar: {
-                enable: true,
-                text: ""
-            },
-            fadeIn: true,
-            fadeInSpeed: 500
         }
 
-        // Wordle Clone
-        const openPopupboxWordle = () => {
+    const popupboxConfigWordle = {
+        titleBar: {
+            enable: true,
+            text: ""
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+    }
+
+    // Github Search
+    const openPopupboxGitSearch = () => {
             const content = (
                 <>
-                <a href="https://pablo-cunha.github.io/wordle-clone/" target="_blank" rel="noreferrer">            
-                <img className="popup-image" src={wordleClone} alt="Wordle Clone"/> 
+                <a href="https://github-search-zeta-opal.vercel.app/" target="_blank" rel="noreferrer">            
+                <img className="popup-image" src={githubSearch} alt="Github Search"/> 
                 </a>
-                <p>Clone do jogo Wordle, feito com HTML, CSS e JavaScript.</p>
+                <p>Buscador de perfis Github que exibe detalhes sobre o perfil pesquisado. Desenvolvido em Reactjs.</p>
                 <p>Clique na imagem e acesse o projeto!</p>
-                <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/wordle-clone") } 
+                <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/github-search") } 
                 href="" target="_blank" rel="noreferrer">
-                https://github.com/pablo-cunha/wordle-clone</a>
+                https://github.com/pablo-cunha/github-search</a>
                 </>
                 )
                 PopupboxManager.open({content})
         }
 
-        const popupboxConfigWordle = {
-            titleBar: {
-                enable: true,
-                text: ""
-            },
-            fadeIn: true,
-            fadeInSpeed: 500
-        }
+    const popupboxConfigGitSearch = {
+        titleBar: {
+            enable: true,
+            text: ""
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+    }
 
-        // Buscador CEP
-        const openPopupboxBuscador = () => {
-            const content = (
-                <>
-                <a href="https://buscador-cep-phi.vercel.app/" target="_blank" rel="noreferrer">            
-                <img className="popup-image" src={buscadorCep} alt="Buscador CEP"/> 
-                </a>
-                <p>Buscador de CEP feito em React e requisições feitas via Ajax.</p>
-                <p>Clique na imagem e acesse o projeto!</p>
-                <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/buscador-cep") } 
-                href="" target="_blank" rel="noreferrer">
-                https://github.com/pablo-cunha/buscador-cep</a>
-                </>
-                )
-                PopupboxManager.open({content})
-        }
-
-        const popupboxConfigBuscador = {
-            titleBar: {
-                enable: true,
-                text: ""
-            },
-            fadeIn: true,
-            fadeInSpeed: 500
-        }
-
-        // Projeto Bikcraft
-        const openPopupboxBikcraft = () => {
-            const content = (
-                <>
-                <a href="https://bikcraft-gold.vercel.app/" target="_blank" rel="noreferrer">            
+    // Projeto Bikcraft
+    const openPopupboxBikcraft = () => {
+        const content = (
+            <>
+            <a href="https://bikcraft-gold.vercel.app/" target="_blank" rel="noreferrer">            
                 <img className="popup-image" src={bikcraft} alt="Buscador CEP"/> 
-                </a>
-                <p>Projeto site de bicicletas elétricas, feito apenas com HTML, CSS e JavaScript.</p>
-                <p>Clique na imagem e acesse o projeto!</p>
-                <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/bikcraft") } 
-                href="" target="_blank" rel="noreferrer">
-                https://github.com/pablo-cunha/bikcraft</a>
-                </>
-                )
-                PopupboxManager.open({content})
-        }
+            </a>
+            <p>Projeto site de bicicletas elétricas, feito apenas com HTML, CSS e JavaScript.</p>
+            <p>Clique na imagem e acesse o projeto!</p>
+            <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/bikcraft") } 
+            href="" target="_blank" rel="noreferrer">
+            https://github.com/pablo-cunha/bikcraft</a>
+            </>
+            )
+            PopupboxManager.open({content})
+    }
 
-        const popupboxConfigBikcraft = {
-            titleBar: {
-                enable: true,
-                text: ""
-            },
-            fadeIn: true,
-            fadeInSpeed: 500
-        }
+    const popupboxConfigBikcraft = {
+        titleBar: {
+            enable: true,
+            text: ""
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+    }
 
     return (
         <div id="portfolio" className="portfolio-wrapper">
@@ -156,21 +129,15 @@ const Portfolio = () => {
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
-                {/* To-Do List Box */}
-                    <div className="portfolio-image-box" onClick={openPopupboxToDo}>
-                    <img className="portfolio-image" src={toDoList} alt="Task Manager feito em VueJS e Bootstrap."/>
-                    <div className="overflow"></div>
-                    <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
-                    </div>
                 {/* Wordle Clone Box */}
                     <div className="portfolio-image-box" onClick={openPopupboxWordle}>
                     <img className="portfolio-image" src={wordleClone} alt="Clone do jogo Wordle, feito com HTML, CSS e JavaScript."/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
-                {/* Buscador de CEP */}
-                    <div className="portfolio-image-box" onClick={openPopupboxBuscador}>
-                    <img className="portfolio-image" src={buscadorCep} alt="Buscador de CEP feito em React e requisições feitas via Ajax."/>
+                {/* Github Search */}
+                    <div className="portfolio-image-box" onClick={openPopupboxGitSearch}>
+                    <img className="portfolio-image" src={githubSearch} alt="Github Search"/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
@@ -182,10 +149,9 @@ const Portfolio = () => {
                     </div>
                 </div> 
             </div>
-            <PopupboxContainer {...popupboxConfigToDo}/>
             <PopupboxContainer {...popupboxConfigNetflix}/>
             <PopupboxContainer {...popupboxConfigWordle}/>
-            <PopupboxContainer {...popupboxConfigBuscador}/>
+            <PopupboxContainer {...popupboxConfigGitSearch}/>
             <PopupboxContainer {...popupboxConfigBikcraft}/>
     </div>
     )
