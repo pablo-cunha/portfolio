@@ -1,6 +1,6 @@
 import React from 'react'
 // PROJECTS IMGS
-import githubSearch from '../images/github-search.JPG'
+import githubSearch from '../images/git-search.JPG'
 import wordleClone from '../images/clone-wordle.JPG'
 import netflix from '../images/netflix-clone.JPG'
 import bikcraft from '../images/bikcraft.JPG'
