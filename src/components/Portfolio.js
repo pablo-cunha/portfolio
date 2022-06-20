@@ -130,15 +130,15 @@ const Portfolio = () => {
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
-                {/* Github Search */}
-                    <div className="portfolio-image-box" onClick={openPopupboxGitSearch}>
-                    <img className="portfolio-image" src={githubSearch} alt="Github Search"/>
-                    <div className="overflow"></div>
-                    <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
-                    </div>
                 {/* Bikcraft Box */}
                     <div className="portfolio-image-box" onClick={openPopupboxBikcraft}>
                     <img className="portfolio-image" src={bikcraft} alt="Projeto site de bicicletas elétricas, feito apenas com HTML, CSS e JavaScript."/>
+                    <div className="overflow"></div>
+                    <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
+                    </div>
+                {/* Github Search */}
+                    <div className="portfolio-image-box" onClick={openPopupboxGitSearch}>
+                    <img className="portfolio-image" src={githubSearch} alt="Github Search"/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
