@@ -20,7 +20,7 @@ const Portfolio = () => {
         <a href="https://react-netflix-khaki.vercel.app/" target="_blank" rel="noreferrer">            
         <img className="popup-image" src={netflix} alt="Clone Netflix"/> 
         </a>
-        <p>Clone Front-end Netflix desenvolvido em React.</p>
+        <p>Clone Front-end Netflix desenvolvido em ReactJS.</p>
         <p>Clique na imagem e acesse o projeto!</p>
         <b>Github: </b> <a className="hyper-link" 
         onClick={() => window.open("https://github.com/pablo-cunha/reactNetflix") } 
