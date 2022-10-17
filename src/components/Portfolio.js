@@ -2,7 +2,7 @@ import React from 'react'
 // PROJECTS IMGS
 import githubSearch from '../images/git-search.JPG'
 import wordleClone from '../images/clone-wordle.JPG'
-import netflix from '../images/netflix-clone.JPG'
+import buscadorCep from '../images/buscador-cep.JPG'
 import bikcraft from '../images/bikcraft.JPG'
 // REACT POP UP BOX
 import { PopupboxManager, PopupboxContainer } from "react-popupbox"
@@ -13,25 +13,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Portfolio = () => {
 
-    // Projeto Netflix
-    const openPopupboxNetflix = () => {
+    // Buscador CEP
+    const openPopupboxBuscador = () => {
         const content = (
         <>
-        <a href="https://react-netflix-khaki.vercel.app/" target="_blank" rel="noreferrer">            
-        <img className="popup-image" src={netflix} alt="Clone Netflix"/> 
+        <a href="https://buscador-cep-tau.vercel.app/" target="_blank" rel="noreferrer">            
+        <img className="popup-image" src={buscadorCep} alt="Clone Netflix"/> 
         </a>
-        <p>Clone Front-end Netflix desenvolvido em ReactJS.</p>
+        <p>Buscador de CEP desenvolvido em ReactJS.</p>
         <p>Clique na imagem e acesse o projeto!</p>
         <b>Github: </b> <a className="hyper-link" 
-        onClick={() => window.open("https://github.com/pablo-cunha/reactNetflix") } 
+        onClick={() => window.open("https://github.com/pablo-cunha/buscador-cep") } 
         href="" target="_blank" rel="noreferrer">
-        https://github.com/pablo-cunha/reactNetflix</a>
+        https://github.com/pablo-cunha/buscador-cep</a>
         </>
         )
         PopupboxManager.open({content})
     } 
 
-    const popupboxConfigNetflix = {
+    const popupboxConfigBuscador = {
         titleBar: {
             enable: true,
             text: ""
@@ -124,9 +124,9 @@ const Portfolio = () => {
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">portfolio</h1>
                 <div className="image-box-wrapper row justify-content-center">
-                {/* Netflix Box */}
-                    <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
-                    <img className="portfolio-image" src={netflix} alt="Clone Netflix desenvolvido em React."/>
+                {/* Buscador CEP */}
+                    <div className="portfolio-image-box" onClick={openPopupboxBuscador}>
+                    <img className="portfolio-image" src={buscadorCep} alt="Buscador de CEP desenvolvido em React."/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
@@ -150,7 +150,7 @@ const Portfolio = () => {
                     </div>
                 </div> 
             </div>
-            <PopupboxContainer {...popupboxConfigNetflix}/>
+            <PopupboxContainer {...popupboxConfigBuscador}/>
             <PopupboxContainer {...popupboxConfigBikcraft}/>
             <PopupboxContainer {...popupboxConfigGitSearch}/>
             <PopupboxContainer {...popupboxConfigWordle}/>
