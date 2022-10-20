@@ -1,7 +1,7 @@
 import React from 'react'
 // PROJECTS IMGS
 import githubSearch from '../images/git-search.JPG'
-import wordleClone from '../images/clone-wordle.JPG'
+import vueList from '../images/vue-todolist.jpg'
 import buscadorCep from '../images/buscador-cep.JPG'
 import bikcraft from '../images/bikcraft.JPG'
 // REACT POP UP BOX
@@ -92,24 +92,24 @@ const Portfolio = () => {
         fadeInSpeed: 500
     }
 
-    // Wordle Clone
-    const openPopupboxWordle = () => {
+    // ToDo List
+    const openPopupboxToDo = () => {
         const content = (
             <>
-            <a href="https://pablo-cunha.github.io/wordle-clone/" target="_blank" rel="noreferrer">            
-                <img className="popup-image" src={wordleClone} alt="Wordle Clone"/> 
+            <a href="https://vue-todolist-iota.vercel.app/" target="_blank" rel="noreferrer">            
+                <img className="popup-image" src={vueList} alt="To do list"/> 
             </a>
-            <p>Clone do jogo Wordle, feito com HTML, CSS e JavaScript.</p>
+            <p>ToDo List desenvoldida em Vue.js, estilizada com Bootstrap e utilizando LocalStorage.</p>
             <p>Clique na imagem e acesse o projeto!</p>
-            <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/wordle-clone") } 
+            <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/vue-todolist") } 
             href="" target="_blank" rel="noreferrer">
-            https://github.com/pablo-cunha/wordle-clone</a>
+            https://github.com/pablo-cunha/vue-todolist</a>
             </>
             )
             PopupboxManager.open({content})
         }
 
-    const popupboxConfigWordle = {
+    const popupboxConfigToDo = {
         titleBar: {
             enable: true,
             text: ""
@@ -126,25 +126,25 @@ const Portfolio = () => {
                 <div className="image-box-wrapper row justify-content-center">
                 {/* Buscador CEP */}
                     <div className="portfolio-image-box" onClick={openPopupboxBuscador}>
-                    <img className="portfolio-image" src={buscadorCep} alt="Buscador de CEP desenvolvido em React."/>
+                    <img className="portfolio-image" src={buscadorCep} alt="Buscador de CEP"/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
                 {/* Bikcraft Box */}
                     <div className="portfolio-image-box" onClick={openPopupboxBikcraft}>
-                    <img className="portfolio-image" src={bikcraft} alt="Projeto site de bicicletas elétricas, feito apenas com HTML, CSS e JavaScript."/>
+                    <img className="portfolio-image" src={bikcraft} alt="Projeto site de bicicletas elétricas"/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
                 {/* Github Search */}
                     <div className="portfolio-image-box" onClick={openPopupboxGitSearch}>
-                    <img className="portfolio-image" src={githubSearch} alt="Github Search"/>
+                    <img className="portfolio-image" src={githubSearch} alt="Buscador de perfis Github"/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
-                {/* Wordle Clone Box */}
-                <div className="portfolio-image-box" onClick={openPopupboxWordle}>
-                    <img className="portfolio-image" src={wordleClone} alt="Clone do jogo Wordle, feito com HTML, CSS e JavaScript."/>
+                {/* Vue ToDo List */}
+                <div className="portfolio-image-box" onClick={openPopupboxToDo}>
+                    <img className="portfolio-image" src={vueList} alt="Lista de tarefas desenvolvida em Vue.JS"/>
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
@@ -153,7 +153,7 @@ const Portfolio = () => {
             <PopupboxContainer {...popupboxConfigBuscador}/>
             <PopupboxContainer {...popupboxConfigBikcraft}/>
             <PopupboxContainer {...popupboxConfigGitSearch}/>
-            <PopupboxContainer {...popupboxConfigWordle}/>
+            <PopupboxContainer {...popupboxConfigToDo}/>
     </div>
     )
 }
