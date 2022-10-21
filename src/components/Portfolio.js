@@ -22,9 +22,8 @@ const Portfolio = () => {
         </a>
         <p>Buscador de CEP desenvolvido em ReactJS.</p>
         <p>Clique na imagem e acesse o projeto!</p>
-        <b>Github: </b> <a className="hyper-link" 
-        onClick={() => window.open("https://github.com/pablo-cunha/buscador-cep") } 
-        href="" target="_blank" rel="noreferrer">
+        <b>Github: </b> <a className="hyper-link"
+        href="https://github.com/pablo-cunha/buscador-cep" target="_blank" rel="noreferrer">
         https://github.com/pablo-cunha/buscador-cep</a>
         </>
         )
@@ -49,8 +48,8 @@ const Portfolio = () => {
                 </a>
                 <p>Buscador de perfis Github que exibe detalhes sobre o perfil pesquisado. Desenvolvido em Reactjs.</p>
                 <p>Clique na imagem e acesse o projeto!</p>
-                <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/github-search") } 
-                href="" target="_blank" rel="noreferrer">
+                <b>Github: </b> <a className="hyper-link" 
+                href="https://github.com/pablo-cunha/github-search" target="_blank" rel="noreferrer">
                 https://github.com/pablo-cunha/github-search</a>
                 </>
                 )
@@ -75,8 +74,8 @@ const Portfolio = () => {
             </a>
             <p>Projeto site de bicicletas elétricas, feito apenas com HTML, CSS e JavaScript.</p>
             <p>Clique na imagem e acesse o projeto!</p>
-            <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/bikcraft") } 
-            href="" target="_blank" rel="noreferrer">
+            <b>Github: </b> <a className="hyper-link" 
+            href="https://github.com/pablo-cunha/bikcraft" target="_blank" rel="noreferrer">
             https://github.com/pablo-cunha/bikcraft</a>
             </>
             )
@@ -101,8 +100,8 @@ const Portfolio = () => {
             </a>
             <p>ToDo List desenvoldida em Vue.js, estilizada com Bootstrap e utilizando LocalStorage.</p>
             <p>Clique na imagem e acesse o projeto!</p>
-            <b>Github: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/pablo-cunha/vue-todolist") } 
-            href="" target="_blank" rel="noreferrer">
+            <b>Github: </b> <a className="hyper-link"
+            href="https://github.com/pablo-cunha/vue-todolist" target="_blank" rel="noreferrer">
             https://github.com/pablo-cunha/vue-todolist</a>
             </>
             )
@@ -152,8 +151,8 @@ const Portfolio = () => {
             </div>
             <PopupboxContainer {...popupboxConfigBuscador}/>
             <PopupboxContainer {...popupboxConfigBikcraft}/>
-            <PopupboxContainer {...popupboxConfigGitSearch}/>
             <PopupboxContainer {...popupboxConfigToDo}/>
+            <PopupboxContainer {...popupboxConfigGitSearch}/>
     </div>
     )
 }
