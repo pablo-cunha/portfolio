@@ -17,7 +17,7 @@ const About = () => {
             desenvolvimento de sistemas na instituição FAETERJ. Como um bom
             entusiasta, por fora da faculdade estou sempre atrás de conhecimento
             prático sobre programação. Tenho conhecimento em desenvolvimento
-            web, utilizando tecnologias como: ReactJS, Angular, Express e outras
+            web, utilizando tecnologias como: ReactJS, VueJS, Node e outras
             mais. No momento estou estudando Java.
           </p>
         </div>
