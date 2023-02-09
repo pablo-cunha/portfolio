@@ -8,7 +8,7 @@ const Footer = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div>
                             <p>Developed by Pablo Cunha</p>
-                            <p>Rio De Janeiro, Brazil - 2021</p>
+                            <p>Rio De Janeiro, Brazil - 2023</p>
                         </div>
                     </div>
                 </div>
